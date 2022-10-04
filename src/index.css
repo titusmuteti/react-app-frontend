@@ -64,3 +64,6 @@ body {
   text-align: center;
   padding-top: 200pt;
 }
+.checkbox-wrapper {
+  font-weight: bold;
+}
