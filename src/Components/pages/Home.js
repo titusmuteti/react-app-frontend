@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <h1 className='text-blue' >The place to shop</h1>
       {img.map(img=> {
-        return <img src={img.image} />
+        return (<img src={img.image} />)
       })}
     </div>
   )
