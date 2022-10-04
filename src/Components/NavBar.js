@@ -4,7 +4,7 @@ import { AiFillHome } from "react-icons/ai";
 const NavBar = () => {
   return (
     <nav className='nav'>
-        <a href='/' className='ClassCollection'>Class Collecting</a>
+        <h1 href='/' className='ClassCollection'>CLASS COLLECTION</h1>
         <ul>
             <li>
                 <a href='/home' className='AiFillHome'>
@@ -13,7 +13,7 @@ const NavBar = () => {
             </li>
 
             <li>
-                <a href='/reviews'>Reviews</a>
+                <a href='/reviews'>Products</a>
             </li>
 
             <li>
