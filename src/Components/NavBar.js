@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const NavBar = () => {
   return (
@@ -6,7 +6,7 @@ const NavBar = () => {
         <a href='/' className='Class-Collection'>Class Collecting</a>
         <ul>
             <li>
-                <a href='/home' className=''>Home</a>
+                <a href='/home' className=''>Home <AiFillHome></AiFillHome></a>
             </li>
 
             <li>
