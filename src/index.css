@@ -54,3 +54,11 @@ body {
 .nav li:hover {
   color: white;
 }
+
+.home {
+  background: url("file:///home/mumo/Downloads/682226%20(2).jpg");
+  height: 700pt;
+  width: 1430pt;
+  text-align: center;
+  padding-top: 200pt;
+}
