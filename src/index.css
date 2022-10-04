@@ -54,3 +54,9 @@ body {
 .nav li:hover {
   color: white;
 }
+
+.home {
+  background-image: url("file:///home/mumo/Downloads/682226.jpg");
+  height: auto;
+  width: auto;
+}
