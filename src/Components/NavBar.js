@@ -1,12 +1,15 @@
 import React from 'react';
+import { AiFillHome } from "react-icons/ai";
 
 const NavBar = () => {
   return (
     <nav className='nav'>
-        <a href='/' className='Class-Collection'>Class Collecting</a>
+        <a href='/' className='ClassCollection'>Class Collecting</a>
         <ul>
             <li>
-                <a href='/home' className=''>Home <AiFillHome></AiFillHome></a>
+                <a href='/home' className='AiFillHome'>
+                    Home <AiFillHome/>
+                </a>
             </li>
 
             <li>
