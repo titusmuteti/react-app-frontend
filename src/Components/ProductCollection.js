@@ -9,10 +9,8 @@ const ProductCollection = ({products}) => {
     )
   })
   return (
-    <div className='grid-cols-4'>
-      <div className='grid-rows-5'>
+    <div className=' grid grid-rows-5 grid-flow-col gap-7 object-contain'>
         {displayProducts}
-      </div>
     </div>
   )
 }
