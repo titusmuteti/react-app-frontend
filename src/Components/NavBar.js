@@ -4,7 +4,7 @@ import { AiFillHome, AiOutlineStar } from "react-icons/ai";
 const NavBar = () => {
   return (
     <nav className='nav'>
-        <h1 className='ClassCollection text-center text-white'>CLASS <AiOutlineStar className='text-white'/> COLLECTION</h1>
+        <h1 className='ClassCollection text-center text-white italic font-sans'>CLASS COLLECTION LTD</h1>
         <ul>
             <li>
                 <a href='/' className='AiFillHome'>
