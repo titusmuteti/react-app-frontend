@@ -9,7 +9,7 @@ const ProductCollection = ({products}) => {
     )
   })
   return (
-    <div className=' grid grid-rows-5 grid-flow-col gap-7 object-contain'>
+    <div className=' grid grid-rows-5 grid-flow-col gap-7 object-contain min-h-0'>
         {displayProducts}
     </div>
   )
