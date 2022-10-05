@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductCard = () => {
   return (
-    <div>ProductCard</div>
+    <div className='max-w-sm rounded overflow-hidden shadow-lg'>ProductCard</div>
   )
 }
 
