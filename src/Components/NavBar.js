@@ -13,7 +13,7 @@ const NavBar = () => {
             </li>
 
             <li>
-                <a href='/reviews'>Products</a>
+                <a href='/products'>Products</a>
             </li>
 
             <li>

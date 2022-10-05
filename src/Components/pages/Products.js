@@ -8,6 +8,7 @@ useEffect(()=> {
   fetch("https://fierce-ridge-31455.herokuapp.com/products")
   .then(res => res.json())
   .then(products => setProductsList(products))
+  console.log(productsList);
 })
   return (
     <div>
