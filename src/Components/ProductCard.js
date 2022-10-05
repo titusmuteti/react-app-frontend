@@ -1,13 +1,16 @@
 import React from 'react';
+import { AiOutlineShoppingCart} from "react-icons/ai";
+
 
 const ProductCard = ({product}) => {
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-lg h-96 bg-orange-300'>
+    <>
+    <div className='max-w-sm rounded overflow-hidden shadow-lg h-auto bg-orange-300'>
       <img className='w-full border-4 border-indigo-500/100 mt-2 h-64 ' src={product.image} alt={product.title}/>
 
       <div className='px-6 py-4'>
         
-        <div className='font-bold mb-2 text-sm'>
+        <div className='font-bold mb-0 text-sm '>
           {product.title}
         </div>
 
@@ -16,10 +19,10 @@ const ProductCard = ({product}) => {
           ${product.price}
         </span>
       </div>
-        {/* <p className='text-gray-700 text-base'>{product.description}</p> */}
       </div>
-
     </div>
+    </>
+
   )
 }
 

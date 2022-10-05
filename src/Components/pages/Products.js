@@ -12,7 +12,7 @@ useEffect(()=> {
 })
   return (
     <>
-    <div className='flex items-center p-10 text-4xl'>
+    <div className='flex items-center p-10 text-3xl'>
       <div className='flex border border-purple-200 rounded'>
         <input
           type={"text"}
