@@ -7,7 +7,7 @@ const NavBar = () => {
         <h1 className='ClassCollection text-center text-white'>CLASS <AiOutlineStar className='text-white'/> COLLECTION</h1>
         <ul>
             <li>
-                <a href='/home' className='AiFillHome'>
+                <a href='/' className='AiFillHome'>
                     Home <AiFillHome/>
                 </a>
             </li>
