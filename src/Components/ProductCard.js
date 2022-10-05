@@ -1,11 +1,11 @@
 import React from 'react';
-import { AiOutlineShoppingCart} from "react-icons/ai";
+import { AiFillHeart, AiOutlineShoppingCart, AiOutlineDelete} from "react-icons/ai";
 
 
 const ProductCard = ({product}) => {
   return (
     <>
-    <div className='container mx-auto px-4 mb-4 bg-orange-300'>
+    <div className='container mx-auto px-4 mb-2 pt-5 bg-orange-300'>
       <img className='w-full border-4 border-indigo-500/100 mt-2 h-64 ' src={product.image} alt={product.title}/>
 
       <div className='px-6 py-4'>
@@ -20,6 +20,12 @@ const ProductCard = ({product}) => {
         </span>
       </div>
       </div>
+
+    <div className='px-2 pt-4'>
+        <button><span className='inline-block px-3 py-1 pl-10'><AiFillHeart className='text-black text-4xl'/></span></button>
+        <button><span className='inline-block px-3 py-1 pl-10'><AiOutlineShoppingCart className='text-black text-4xl'/></span></button>
+        <button><span className='inline-block px-3 py-1 pl-10'><AiOutlineDelete className='text-black text-4xl'/></span></button>
+      </div>
     </div>
     </>
 
@@ -27,3 +33,5 @@ const ProductCard = ({product}) => {
 }
 
 export default ProductCard
+
+//className='flex justify-center gap-20 bg-white'
