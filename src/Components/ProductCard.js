@@ -9,7 +9,6 @@ const ProductCard = ({product}) => {
       <img className='w-full border-4 border-indigo-500/100 mt-2 h-64 ' src={product.image} alt={product.title}/>
 
       <div className='px-6 py-4'>
-        
         <div className='font-bold mb-0 text-sm '>
           {product.title}
         </div>

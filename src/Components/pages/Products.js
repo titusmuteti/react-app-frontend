@@ -12,6 +12,7 @@ useEffect(()=> {
   .then(res => res.json())
   .then(products => setProductsList(products))
   //console.log(productsList);
+  .catch(err => console.log(err))
 })
   return (
     <>
