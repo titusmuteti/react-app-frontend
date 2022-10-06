@@ -10,6 +10,7 @@ const ProductCollection = ({products}) => {
   })
   return (
     <>
+    <h1 className='text-4xl'>Shop with us</h1>
     <div className='grid items-center p-10 h-auto w-auto'>
       <div className='flex border border-purple-200 rounded'>
         <input
