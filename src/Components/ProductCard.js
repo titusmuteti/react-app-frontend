@@ -22,9 +22,9 @@ const ProductCard = ({product}) => {
       </div>
 
     <div className='px-2 pt-4'>
-        <button><span className='inline-block px-3 py-1 pl-10'><AiFillHeart className='text-black text-4xl'/></span></button>
-        <button><span className='inline-block px-3 py-1 pl-10'><AiOutlineShoppingCart className='text-black text-4xl'/></span></button>
-        <button><span className='inline-block px-3 py-1 pl-10'><AiOutlineDelete className='text-black text-4xl'/></span></button>
+        <span className='inline-block px-3 py-1 pl-10'><AiFillHeart className='text-white text-4xl'/></span>
+        <span className='inline-block px-3 py-1 pl-10'><AiOutlineShoppingCart className='text-black text-4xl'/></span>
+        <span className='inline-block px-3 py-1 pl-10'><AiOutlineDelete className='text-black text-4xl'/></span>
       </div>
     </div>
     </>
@@ -33,5 +33,3 @@ const ProductCard = ({product}) => {
 }
 
 export default ProductCard
-
-//className='flex justify-center gap-20 bg-white'

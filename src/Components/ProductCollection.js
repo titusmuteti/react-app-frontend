@@ -5,12 +5,12 @@ const ProductCollection = ({products}) => {
   //console.log(products);
   const displayProducts = products.map(product => {
     return (
-      <ProductCard key={product.key} product={product} />
+      <ProductCard key={product.id} product={product} />
     )
   })
   return (
     <>
-    <div className='flex items-center p-10 text-xl'>
+    <div className='grid items-center p-10 h-auto w-auto'>
       <div className='flex border border-purple-200 rounded'>
         <input
           type={"text"}
