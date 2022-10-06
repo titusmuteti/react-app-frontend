@@ -1,4 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+   to = "https://fierce-ridge-31455.herokuapp.com/products"
   status = 200
+ 
