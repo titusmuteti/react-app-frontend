@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillHome, AiOutlineStar } from "react-icons/ai";
+import { AiFillHome } from "react-icons/ai";
 
 const NavBar = () => {
   return (
