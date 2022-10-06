@@ -6,7 +6,9 @@ const Products = () => {
 const [productsList, setProductsList] = useState([]);
 
 useEffect(()=> {
-  fetch("https://fierce-ridge-31455.herokuapp.com/products")
+  fetch("https://fierce-ridge-31455.herokuapp.com/products", {
+    method: "GET"
+  })
   .then(res => res.json())
   .then(products => setProductsList(products))
   //console.log(productsList);
