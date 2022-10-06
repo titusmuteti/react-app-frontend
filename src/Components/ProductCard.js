@@ -5,11 +5,12 @@ import { AiFillHeart, AiOutlineShoppingCart, AiOutlineDelete} from "react-icons/
 const ProductCard = ({product}) => {
   return (
     <>
-    <div className='container mx-auto px-4 mb-2 pt-5 bg-orange-300'>
-      <img className='w-full border-4 border-indigo-500/100 mt-2 h-64 ' src={product.image} alt={product.title}/>
+    <div className='container mx-auto h-fit px-4 mb-2 pt-5 bg-orange-300'>
+      <img src={product.image} alt="" className='h-40 max-w-none' />
+      {/* <img className='w-full border-4 mt-2 h-64 pr-48' src={product.image} alt={product.title}/> */}
 
       <div className='px-6 py-4'>
-        <div className='font-bold mb-0 text-sm '>
+        <div className='font-bold  text-lg '>
           {product.title}
         </div>
 

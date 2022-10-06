@@ -20,6 +20,8 @@ const NavBar = () => {
                 <a href='/about'>About</a>
             </li>
         </ul>
+
+        
     </nav>
   )
 }

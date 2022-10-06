@@ -73,7 +73,7 @@ body {
 .App {
   text-align: center;
 }
-form {
+.form {
  border:2px solid green;
  padding: 30px;
 }
