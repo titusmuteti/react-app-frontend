@@ -5,8 +5,9 @@ import { AiFillHeart, AiOutlineShoppingCart, AiOutlineDelete} from "react-icons/
 const ProductCard = ({product}) => {
   return (
     <>
-    <div className='container mx-auto h-fit px-4 mb-2 pt-5 bg-orange-300'>
-      <img src={product.image} alt="" className='h-40 max-w-none' />
+    <div className='md:container md:mx-width leading-relaxed h-min-content px-4 mb-2 pt-5 bg-orange-300'>
+      <h2 className='font-bold'>CATEGORY: {product.category}</h2>
+      <img src={product.image} alt="" className='h-40 max-w-none mt-10' />
       {/* <img className='w-full border-4 mt-2 h-64 pr-48' src={product.image} alt={product.title}/> */}
 
       <div className='px-6 py-4'>
