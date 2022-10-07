@@ -4,6 +4,12 @@ import SelectedProducts from '../SelectedProducts';
 
 const Products = () => {
 const [productsList, setProductsList] = useState([]);
+const [cartCollection, setCatCollection] = useState([]);
+
+const addToCart = (product) => {
+  const newCollection = cartCollection.filter((card) => card != product)
+  setCatCollection([...newCollection, product])
+}
 
 useEffect(()=> {
   fetch("https://fierce-ridge-31455.herokuapp.com/products")
@@ -14,8 +20,8 @@ useEffect(()=> {
 })
   return (
     <>
-    <SelectedProducts />
-    <ProductCollection products={productsList}/>
+    <SelectedProducts listedProducts={cartCollection} />
+    <ProductCollection products={productsList} action={addToCart} />
     </>
   )
 }

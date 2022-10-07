@@ -1,11 +1,11 @@
 import React from 'react'
 import ProductCard from './ProductCard'
 
-const ProductCollection = ({products}) => {
+const ProductCollection = ({products, action}) => {
   //console.log(products);
   const displayProducts = products.map(product => {
     return (
-      <ProductCard key={product.id} product={product} />
+      <ProductCard key={product.id} product={product} action={action} />
     )
   })
   return (
@@ -29,7 +29,7 @@ const ProductCollection = ({products}) => {
       </div>
     </div>
 
-    <div className=' grid grid-rows-5 grid-flow-col gap-7 object-contain min-h-0'>
+    <div className=' grid grid-rows-4 grid-flow-col gap-7 h-fit'>
         {displayProducts}
     </div>
     </>

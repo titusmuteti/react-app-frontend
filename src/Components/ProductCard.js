@@ -3,19 +3,24 @@ import { AiFillHeart, AiOutlineShoppingCart, AiOutlineDelete} from "react-icons/
 
 
 const ProductCard = ({product}) => {
+
+  const handleClick = () => {
+    
+  }
+
   return (
     <>
-    <div className='md:container md:mx-width leading-relaxed h-min-content px-4 mb-2 pt-5 bg-orange-300'>
+    <div className='max-w-sm rounded overflow-hidden shadow-lg bg-orange-300'>
       <h2 className='font-bold'>CATEGORY: {product.category}</h2>
       <img src={product.image} alt="" className='h-40 max-w-none mt-10' />
       {/* <img className='w-full border-4 mt-2 h-64 pr-48' src={product.image} alt={product.title}/> */}
 
       <div className='px-6 py-4'>
-        <div className='font-bold  text-lg '>
+        <div className='font-bold  text-sm '>
           {product.title}
         </div>
 
-        <div className='px-6 pt-4 pb-2'>
+        <div className='px-0 mt-2'>
         <span className='class="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 pb-2 text-lg'>
           ${product.price}
         </span>
@@ -24,7 +29,7 @@ const ProductCard = ({product}) => {
 
     <div className='px-2 pt-4'>
         <span className='inline-block px-3 py-1 pl-10'><AiFillHeart className='text-white text-4xl'/></span>
-        <span className='inline-block px-3 py-1 pl-10'><AiOutlineShoppingCart className='text-black text-4xl'/></span>
+        <span className='inline-block px-3 py-1 pl-10' onClick={handleClick}><AiOutlineShoppingCart className='text-black text-4xl'/></span>
         <span className='inline-block px-3 py-1 pl-10'><AiOutlineDelete className='text-black text-4xl'/></span>
       </div>
     </div>
