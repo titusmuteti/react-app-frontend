@@ -1,11 +1,14 @@
 import React from 'react';
 import { AiFillHeart, AiOutlineShoppingCart, AiOutlineDelete} from "react-icons/ai";
+import Cart from '../pages/Cart';
 
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, action}) => {
 
   const handleClick = () => {
     alert (`${product.title} successfully added to cart`)
+    action(product)
+    // console.log(product);
   }
 
   const handleLike = () => {

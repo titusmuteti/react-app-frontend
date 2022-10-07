@@ -29,7 +29,7 @@ const ProductCollection = ({products, action}) => {
       </div>
     </div>
 
-    <div className=' grid grid-rows-4 grid-flow-col gap-7 h-fit'>
+    <div className=' grid grid-rows-4 grid-flow-col gap-7 h-fit ml-5 mr-5'>
         {displayProducts}
     </div>
     </>

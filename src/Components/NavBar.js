@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillHome } from "react-icons/ai";
+import { AiFillHome, AiOutlineShoppingCart } from "react-icons/ai";
 
 const NavBar = () => {
   return (
@@ -13,15 +13,19 @@ const NavBar = () => {
             </li>
 
             <li>
-                <a href='/products'>Products</a>
+                <a href='/products'>
+                    Products
+                </a>
             </li>
 
             <li>
-                <a href='/cart'>Cart</a>
+                <a href='/cart'>
+                    Cart <AiOutlineShoppingCart />
+                </a>
             </li>
 
             <li>
-                <a href='/about'>About</a>
+                <a href='/sell'>Sell</a>
             </li>
         </ul>
 

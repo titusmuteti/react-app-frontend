@@ -1,10 +1,10 @@
-import NavBar from "./Components/NavBar";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from "./Components/pages/Home";
-import About from "./Components/pages/About";
-import Products from "./Components/pages/Products";
+import NavBar from "./Components/NavBar";
+import Home from "./pages/Home";
+import Sell from "./pages/Sell";
+import Products from "./pages/Products";
 import Footer from "./Components/Footer";
-import Cart from "./Components/pages/Cart";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
           <Cart />
         </Route>
 
-        <Route exact path={"/about"}>
-          <About />
+        <Route exact path={"/sell"}>
+          <Sell />
         </Route>       
       </Switch>
     </Router>
