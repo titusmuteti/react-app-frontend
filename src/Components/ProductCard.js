@@ -5,7 +5,10 @@ import { AiFillHeart, AiOutlineShoppingCart, AiOutlineDelete} from "react-icons/
 const ProductCard = ({product}) => {
 
   const handleClick = () => {
-    
+    alert (`${product.title} successfully added to cart`)
+  }
+
+  const handleLike = () => {
   }
 
   return (
@@ -28,7 +31,7 @@ const ProductCard = ({product}) => {
       </div>
 
     <div className='px-2 pt-4'>
-        <span className='inline-block px-3 py-1 pl-10'><AiFillHeart className='text-white text-4xl'/></span>
+        <span className='inline-block px-3 py-1 pl-10'><AiFillHeart className='text-red-600 text-4xl' onClick={handleLike}/></span>
         <span className='inline-block px-3 py-1 pl-10' onClick={handleClick}><AiOutlineShoppingCart className='text-black text-4xl'/></span>
         <span className='inline-block px-3 py-1 pl-10'><AiOutlineDelete className='text-black text-4xl'/></span>
       </div>
